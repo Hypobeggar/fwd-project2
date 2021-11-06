@@ -11,7 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html{
   font-family: helvetica;
   font-size: 1.125em;
-
+  line-height: 1.5em;
 }
 .obj {
   display:flex;
@@ -19,13 +19,15 @@ html{
   flex-flow: row wrap;
   justify-content: flex-start;
   background-color: #0F0;
-
 }
 .obj img,
 .obj figcaption{
   display: flex;
   min-width: 50vw;
   max-width: 100%;
+}
+.obj img{
+  padding-bottom: 0.2em;
 }
 figcaption{
   font-size: 0.84em;
@@ -51,13 +53,15 @@ header{
   display: grid;
   font-size: 2em;
   background-color: #F0F0F0;
-
 }
 h2,
 h3,
 h4{
   font-size: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.3em;
 }
+
 
 
 @media screen and (min-width: 315px) {
