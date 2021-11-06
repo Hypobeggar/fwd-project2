@@ -13,17 +13,41 @@ html{
   font-size: 1.125em;
 
 }
+.obj {
+  display:flex;
+  padding: 1em;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: #0F0;
 
-header,
-footer{
-  text-align: center;
+}
+.obj img,
+.obj figcaption{
+  display: flex;
+  min-width: 50vw;
+  max-width: 100%;
+}
+figcaption{
+  font-size: 0.84em;
+}
+#content{
+  padding: 0.75em;
+}
+
+.navs{
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1em;
+  justify-content: center;
+  grid-gap: 0.5em;
 }
 footer{
   text-align: center;
-
+  font-size: 1em;
 }
 
 header{
+  text-align: center;
   display: grid;
   font-size: 2em;
   background-color: #F0F0F0;
@@ -35,6 +59,15 @@ h4{
   font-size: 1.5em;
 }
 
-@media screen and (min-width: 600px) {
 
+@media screen and (min-width: 315px) {
+.obj{
+justify-content: space-around;
+}
+.obj img,
+.obj figcaption{
+  min-width: 40vw;
+  width: 40vw;
+  grid-gap: 10vw;
+}
 }
