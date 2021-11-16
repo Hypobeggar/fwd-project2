@@ -13,26 +13,27 @@ html{
   font-size: 1.125em;
   line-height: 1.5em;
 }
-.obj {
+.figures {
   display:flex;
   padding: 1em;
   flex-flow: row wrap;
   justify-content: flex-start;
   background-color: #0F0;
 }
-.obj img,
-.obj figcaption{
+.figures img,
+.figures figcaption{
   display: flex;
   min-width: 50vw;
   max-width: 100%;
 }
-.obj img{
+.figures img{
   padding-bottom: 0.2em;
 }
 figcaption{
   font-size: 0.84em;
 }
 #content{
+  background-color: #FFF;
   padding: 0.75em;
 }
 
@@ -65,11 +66,11 @@ h4{
 
 
 @media screen and (min-width: 315px) {
-.obj{
+.figures{
 justify-content: space-around;
 }
-.obj img,
-.obj figcaption{
+.figures img,
+.figures figcaption{
   min-width: 40vw;
   width: 40vw;
   grid-gap: 10vw;
