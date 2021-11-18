@@ -12,13 +12,15 @@ html{
   font-family: helvetica;
   font-size: 1.125em;
   line-height: 1.5em;
+  background-color: #2f3133;
+  color: #bfbfba;
 }
 .figures {
   display:flex;
   padding: 1em;
   flex-flow: row wrap;
   justify-content: flex-start;
-  background-color: #0F0;
+  background-color: #d69c09;
 }
 .figures img,
 .figures figcaption{
@@ -30,10 +32,10 @@ html{
   padding-bottom: 0.2em;
 }
 figcaption{
+  color: #2f3133;
   font-size: 0.84em;
 }
 #content{
-  background-color: #FFF;
   padding: 0.75em;
 }
 
