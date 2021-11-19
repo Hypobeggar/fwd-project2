@@ -8,16 +8,17 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 
+/* https://www.modularscale.com/?1.125&em&1.5*/
 html{
   font-family: helvetica;
-  font-size: 1.125em;
-  line-height: 1.5em;
+  font-size: 1.125em; /* 18/16= 1.125 */
+  line-height: 1.6875em; /* 27/ 16 = 1.6875*/
   background-color: #2f3133;
   color: #bfbfba;
 }
 .figures {
   display:flex;
-  padding: 1em;
+  padding: 1.125em;
   flex-flow: row wrap;
   justify-content: flex-start;
   background-color: #d69c09;
@@ -25,28 +26,30 @@ html{
 .figures img,
 .figures figcaption{
   display: flex;
-  min-width: 50vw;
   max-width: 100%;
 }
 .figures img{
-  padding-bottom: 0.4em;
+  padding-bottom: 0.33em; /* 4/16 =0.25*/
+}
+figure{
+  padding-bottom: 1.125em;
 }
 figcaption{
   color: #2f3133;
-  font-size: 0.84em;
+  font-size: 0.75em; /* 12/16 = 0.75*/
 }
 #content{
-  padding: 0.75em;
+  padding: 0.75em; /* 12/16 = 0.75*/
 }
 
 .navs{
   display: flex;
   flex-flow: row wrap;
   font-size: 1em;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: #a61919;
-  padding: 0.75em;
-  grid-gap: 0.5em;
+  padding: 0.75em; /* 12/16 */
+  grid-gap: 0.5em; /* 6 / 16*/
   color: #de2121;
 }
 /* LINKS*/
@@ -69,13 +72,13 @@ figcaption{
 
 footer{
   text-align: center;
-  font-size: 1em;
+  font-size: 0.75em;
 }
 
 header{
   text-align: center;
   display: grid;
-  font-size: 2em;
+  font-size: 2em; /**/
   background-color: #F0F0F0;
 }
 h2,
@@ -88,7 +91,7 @@ h4{
 
 
 
-@media screen and (min-width: 315px) {
+@media screen and (min-width: 370px) {
 .figures{
 justify-content: space-around;
 }
@@ -97,5 +100,17 @@ justify-content: space-around;
   min-width: 40vw;
   width: 40vw;
   grid-gap: 10vw;
+  max-height: 50vw;
+  object-fit: cover;
+}
+}
+@media screen and (min-width: 750px) {
+.figures{
+justify-content: space-around;
+}
+.figures img,
+.figures figcaption{
+  min-width: 30vw;
+  width: 30vw;
 }
 }
