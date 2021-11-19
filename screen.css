@@ -9,40 +9,41 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 /* https://www.modularscale.com/?1.125&em&1.5*/
-html{
-  font-family: helvetica;
+html {
+  font-family: helvetica, sans-serif;
   font-size: 1.125em; /* 18/16= 1.125 */
   line-height: 1.6875em; /* 27/ 16 = 1.6875*/
   background-color: #2f3133;
   color: #bfbfba;
 }
+figcaption {
+  color: #2f3133;
+  font-size: 0.75em; /* 12/16 = 0.75*/
+}
 .figures {
-  display:flex;
+  display: flex;
   padding: 1.125em;
   flex-flow: row wrap;
   justify-content: flex-start;
   background-color: #d69c09;
 }
 .figures img,
-.figures figcaption{
+.figures figcaption {
   display: flex;
   max-width: 100%;
 }
-.figures img{
+.figures img {
   padding-bottom: 0.33em; /* 4/16 =0.25*/
 }
-figure{
+figure {
   padding-bottom: 1.125em;
 }
-figcaption{
-  color: #2f3133;
-  font-size: 0.75em; /* 12/16 = 0.75*/
-}
-#content{
+
+#content {
   padding: 0.75em; /* 12/16 = 0.75*/
 }
 
-.navs{
+.navs {
   display: flex;
   flex-flow: row wrap;
   font-size: 1em;
@@ -53,29 +54,29 @@ figcaption{
   color: #de2121;
 }
 /* LINKS*/
-.navs a{
+.navs a {
   text-decoration: none;
 }
 .navs a:link,
 .navs a:visited,
 .navs a:hover,
-.navs a:active{
+.navs a:active {
   color: inherit;
   padding: 0.72em; /* To fix padding being larger than background padding*/
 }
-.navs a:hover{
+.navs a:hover {
   background-color: #8a1313;
 }
 
 
 /**/
 
-footer{
+footer {
   text-align: center;
   font-size: 0.75em;
 }
 
-header{
+header {
   text-align: center;
   display: grid;
   font-size: 2em; /**/
@@ -83,7 +84,7 @@ header{
 }
 h2,
 h3,
-h4{
+h4 {
   font-size: 1.5em;
   padding-top: 0.5em;
   padding-bottom: 0.3em;
@@ -92,25 +93,25 @@ h4{
 
 
 @media screen and (min-width: 370px) {
-.figures{
-justify-content: space-around;
-}
-.figures img,
-.figures figcaption{
-  min-width: 40vw;
-  width: 40vw;
-  grid-gap: 10vw;
-  max-height: 50vw;
-  object-fit: cover;
-}
+  .figures {
+    justify-content: space-around;
+  }
+  .figures img,
+  .figures figcaption {
+    min-width: 40vw;
+    width: 40vw;
+    grid-gap: 10vw;
+    max-height: 50vw;
+    object-fit: cover;
+  }
 }
 @media screen and (min-width: 750px) {
-.figures{
-justify-content: space-around;
-}
-.figures img,
-.figures figcaption{
-  min-width: 30vw;
-  width: 30vw;
-}
+  .figures {
+    justify-content: space-around;
+  }
+  .figures img,
+  .figures figcaption {
+    min-width: 30vw;
+    width: 30vw;
+  }
 }
