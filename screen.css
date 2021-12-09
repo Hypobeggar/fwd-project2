@@ -22,7 +22,7 @@ figcaption {
 }
 .figures {
   display: flex;
-  padding: 1.125em;
+  padding: 1.125em; /* 18/16= 1.125 */
   flex-flow: row wrap;
   justify-content: flex-start;
   background-color: #d69c09;
@@ -33,10 +33,10 @@ figcaption {
   max-width: 100%;
 }
 .figures img {
-  padding-bottom: 0.33em; /* 4/16 =0.25*/
+  padding-bottom: 0.5em; /* 8/16 = 0.5*/
 }
 figure {
-  padding-bottom: 1.125em;
+  padding-bottom: 1.125em; /* 18/16= 1.125 */
 }
 
 #content {
@@ -46,7 +46,7 @@ figure {
 .navs {
   display: flex;
   flex-flow: row wrap;
-  font-size: 1em;
+  font-size: 1em; /*16/16 = 1*/
   justify-content: center;
   background-color: #a61919;
   padding: 0.75em; /* 12/16 */
@@ -62,7 +62,7 @@ figure {
 .navs a:hover,
 .navs a:active {
   color: inherit;
-  padding: 0.72em; /* To fix padding being larger than background padding*/
+  padding: 0.74em; /* To fix padding being larger than background padding in navigation bar*/
 }
 .navs a:hover {
   background-color: #8a1313;
@@ -73,7 +73,7 @@ figure {
 
 footer {
   text-align: center;
-  font-size: 0.75em;
+  font-size: 0.75em; /* 12/16 */
 }
 
 header {
@@ -85,9 +85,9 @@ header {
 h2,
 h3,
 h4 {
-  font-size: 1.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.3em;
+  font-size: 1.6875em; /* 27/ 16 = 1.6875*/
+  padding-top: 0.5em; /* 8/16 = 0.5*/
+  padding-bottom: 0.5em; /* 8/16 = 0.5*/
 }
 
 
@@ -107,6 +107,7 @@ h4 {
 }
 @media screen and (min-width: 750px) {
   .figures {
+    display: grid;
     justify-content: space-around;
   }
   .figures img,
