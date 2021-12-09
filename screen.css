@@ -30,15 +30,20 @@ figcaption {
   background-color: #d69c09;
 }
 .figures img,
-.figures figcaption {
+.figures figcaption,
+img {
   display: flex;
   max-width: 100%;
 }
 .figures img {
   padding-bottom: 0.5em; /* 8/16 = 0.5*/
 }
-figure {
-  padding-bottom: 0.5em; /* 8/16= 0.5 */
+#face {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em; /* 8/16 = 0.5*/
+  max-width: 40vw;
 }
 
 #content {
