@@ -87,7 +87,7 @@ header {
   display: grid;
   text-align: center;
   font-size: 2em; /**/
-  background-color: #F0F0F0;
+  background: radial-gradient(#F0F0F0, #AAA);
 }
 h2,
 h3,
