@@ -17,7 +17,8 @@ html {
   color: #bfbfba;
 }
 
-.figures {
+.figures,
+#face {
   padding: 1em; /* 16/16= 1 */
   display: grid;
   grid-template-columns: 100%;
@@ -25,17 +26,18 @@ html {
   justify-content: flex-start;
   background-color: #d69c09;
 }
-.figures img,
-.figures figcaption,
-img {
-  max-width: 100%;
-}
 figcaption {
   color: #2f3133;
   font-size: 0.75em; /* 12/16 = 0.75*/
   padding-bottom: 0.5em; /* 8/16= 0.5 */
   padding-top: 0.333em; /* 5.328 /16= 0.333 */
 }
+img,
+.figures img,
+.figures figcaption {
+  max-width: 100%;
+}
+
 #face {
   display: block;
   margin-left: auto;
