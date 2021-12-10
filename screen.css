@@ -22,7 +22,7 @@ figcaption {
 }
 .figures {
   display: flex;
-  padding: 0.5em; /* 8/16= 0.5 */
+  padding: 1em; /* 8/16= 0.5 */
   margin-left: 1em; /* 8/16= 0.5 */
   margin-right: 1em; /* 8/16= 0.5 */
   flex-flow: row wrap;
@@ -58,7 +58,9 @@ img {
   background-color: #a61919;
   padding: 0.75em; /* 12/16 */
   grid-gap: 0.5em; /* 6 / 16*/
+  background: linear-gradient(#720B00, #de2121);
   color: #de2121;
+
 }
 /* LINKS*/
 .navs a {
